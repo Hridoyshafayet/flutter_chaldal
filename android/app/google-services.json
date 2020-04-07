@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "404198988528",
+    "firebase_url": "https://queens-grocery.firebaseio.com",
+    "project_id": "queens-grocery",
+    "storage_bucket": "queens-grocery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404198988528:android:7f69470cd3b50b9d29c035",
+        "android_client_info": {
+          "package_name": "com.smartersvision.food_delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404198988528-3lcqs0oii7v3j91c80gi8be727g6ibg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADB8itcp3q4Fst1pvYB_Ux8L573aT6m0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404198988528-3lcqs0oii7v3j91c80gi8be727g6ibg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404198988528:android:a0e9b64db1814bae29c035",
+        "android_client_info": {
+          "package_name": "sji.smartersvision.queens_grocery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404198988528-3lcqs0oii7v3j91c80gi8be727g6ibg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADB8itcp3q4Fst1pvYB_Ux8L573aT6m0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404198988528-3lcqs0oii7v3j91c80gi8be727g6ibg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
