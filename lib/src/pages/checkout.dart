@@ -167,7 +167,7 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                       child: FlatButton(
                         onPressed: () {
                           Navigator.of(context).pushNamed('/OrderSuccess',
-                              arguments: new RouteArgument(param: 'Credit Card (Stripe Gateway)'));
+                              arguments:  RouteArgument(param: 'Credit Card (Stripe Gateway)'));
 //                                      Navigator.of(context).pushReplacementNamed('/Checkout',
 //                                          arguments:
 //                                              new RouteArgument(param: [_con.carts, _con.total, setting.defaultTax]));

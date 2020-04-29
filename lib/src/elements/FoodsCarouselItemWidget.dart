@@ -66,13 +66,16 @@ class FoodsCarouselItemWidget extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    this.food.name,
+                    (this.food.name !=null) ?this.food.name:"",
+
                     overflow: TextOverflow.fade,
                     softWrap: false,
                     style: Theme.of(context).textTheme.body1,
                   ),
                   Text(
-                    food.restaurant.name,
+              
+                    (this.food.restaurant !=null) ?this.food.restaurant.name:"",
+                 //   food.restaurant.name,
                     overflow: TextOverflow.fade,
                     softWrap: false,
                     style: Theme.of(context).textTheme.caption,

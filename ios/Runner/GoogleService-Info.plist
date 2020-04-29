@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>404198988528-3igu4nsmb0erurne8mg08v564m2a8p04.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.404198988528-3igu4nsmb0erurne8mg08v564m2a8p04</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3uKfveJJkD8uwCY9RfknVJZm-JNMrmXg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>404198988528</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.queensgrocery.deliveryboy</string>
+	<key>PROJECT_ID</key>
+	<string>queens-grocery</string>
+	<key>STORAGE_BUCKET</key>
+	<string>queens-grocery.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:404198988528:ios:f07e150ab36aaf1329c035</string>
+	<key>DATABASE_URL</key>
+	<string>https://queens-grocery.firebaseio.com</string>
+</dict>
+</plist>

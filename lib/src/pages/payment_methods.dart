@@ -45,7 +45,7 @@ class _PaymentMethodsWidgetState extends State<PaymentMethodsWidget> {
           style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
         ),
         actions: <Widget>[
-          new ShoppingCartButtonWidget(
+           ShoppingCartButtonWidget(
               iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
         ],
       ),
@@ -83,39 +83,39 @@ class _PaymentMethodsWidgetState extends State<PaymentMethodsWidget> {
                     height: 0,
                   ),
             SizedBox(height: 10),
-            ListView.separated(
-              scrollDirection: Axis.vertical,
-              shrinkWrap: true,
-              primary: false,
-              itemCount: list.paymentsList.length,
-              separatorBuilder: (context, index) {
-                return SizedBox(height: 10);
-              },
-              itemBuilder: (context, index) {
-                return PaymentMethodListItemWidget(paymentMethod: list.paymentsList.elementAt(index));
-              },
-            ),
-            list.cashList.length > 0
-                ? Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    child: ListTile(
-                      contentPadding: EdgeInsets.symmetric(vertical: 0),
-                      leading: Icon(
-                        Icons.monetization_on,
-                        color: Theme.of(context).hintColor,
-                      ),
-                      title: Text(
-                        S.of(context).cash_on_delivery,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.display1,
-                      ),
-                      subtitle: Text(S.of(context).select_your_preferred_payment_mode),
-                    ),
-                  )
-                : SizedBox(
-                    height: 0,
-                  ),
+//            ListView.separated(
+//              scrollDirection: Axis.vertical,
+//              shrinkWrap: true,
+//              primary: false,
+//              itemCount: list.paymentsList.length,
+//              separatorBuilder: (context, index) {
+//                return SizedBox(height: 10);
+//              },
+//              itemBuilder: (context, index) {
+//                return PaymentMethodListItemWidget(paymentMethod: list.paymentsList.elementAt(index));
+//              },
+//            ),
+//            list.cashList.length > 0
+//                ? Padding(
+//                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+//                    child: ListTile(
+//                      contentPadding: EdgeInsets.symmetric(vertical: 0),
+//                      leading: Icon(
+//                        Icons.monetization_on,
+//                        color: Theme.of(context).hintColor,
+//                      ),
+//                      title: Text(
+//                        S.of(context).cash_on_delivery,
+//                        maxLines: 1,
+//                        overflow: TextOverflow.ellipsis,
+//                        style: Theme.of(context).textTheme.display1,
+//                      ),
+//                      subtitle: Text(S.of(context).select_your_preferred_payment_mode),
+//                    ),
+//                  )
+//                : SizedBox(
+//                    height: 0,
+//                  ),
             ListView.separated(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,

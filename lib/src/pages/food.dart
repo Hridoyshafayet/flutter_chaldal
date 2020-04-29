@@ -42,6 +42,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       key: _con.scaffoldKey,
       body: _con.food == null
@@ -93,13 +94,15 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
-                                            _con.food.name,
+                                            (_con.food.name !=null) ?_con.food.name:"",
                                             overflow: TextOverflow.ellipsis,
                                             maxLines: 2,
                                             style: Theme.of(context).textTheme.display2,
                                           ),
                                           Text(
-                                            _con.food.restaurant.name,
+
+                                      (_con.food.restaurant !=null &&_con.food.restaurant.name !=null) ?_con.food.restaurant.name:"",
+                                        //  _con.food.restaurant.name,
                                             overflow: TextOverflow.fade,
                                             softWrap: false,
                                             style: Theme.of(context).textTheme.body1,
@@ -146,34 +149,39 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                     style: Theme.of(context).textTheme.caption,
                                   ),
                                 ),
-                                ListView.separated(
-                                  padding: EdgeInsets.all(0),
-                                  itemBuilder: (context, index) {
-                                    return ExtraItemWidget(
-                                      extra: _con.food.extras.elementAt(index),
-                                      onChanged: _con.calculateTotal,
-                                    );
-                                  },
-                                  separatorBuilder: (context, index) {
-                                    return SizedBox(height: 20);
-                                  },
-                                  itemCount: _con.food.extras.length,
-                                  primary: false,
-                                  shrinkWrap: true,
-                                ),
-                                ListTile(
-                                  dense: true,
-                                  contentPadding: EdgeInsets.symmetric(vertical: 10),
-                                  leading: Icon(
-                                    Icons.donut_small,
-                                    color: Theme.of(context).hintColor,
-                                  ),
-                                  title: Text(
-                                    S.of(context).ingredients,
-                                    style: Theme.of(context).textTheme.subhead,
-                                  ),
-                                ),
-                                Helper.applyHtml(context, _con.food.ingredients, style: TextStyle(fontSize: 12)),
+
+
+                           if(_con.food.ingredients!=null)...[
+                             ListView.separated(
+                               padding: EdgeInsets.all(0),
+                               itemBuilder: (context, index) {
+                                 return ExtraItemWidget(
+                                   extra: _con.food.extras.elementAt(index),
+                                   onChanged: _con.calculateTotal,
+                                 );
+                               },
+                               separatorBuilder: (context, index) {
+                                 return SizedBox(height: 20);
+                               },
+                               itemCount: _con.food.extras.length,
+                               primary: false,
+                               shrinkWrap: true,
+                             ),
+                             ListTile(
+                               dense: true,
+                               contentPadding: EdgeInsets.symmetric(vertical: 10),
+                               leading: Icon(
+                                 Icons.donut_small,
+                                 color: Theme.of(context).hintColor,
+                               ),
+                               title: Text(
+                                 S.of(context).ingredients,
+                                 style: Theme.of(context).textTheme.subhead,
+                               ),
+                             ),
+                             Helper.applyHtml(context, _con.food.ingredients, style: TextStyle(fontSize: 12)),
+                           ],
+
                                 ListTile(
                                   dense: true,
                                   contentPadding: EdgeInsets.symmetric(vertical: 10),
